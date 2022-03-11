@@ -50,6 +50,8 @@ h4 {
   line-height: 24px;
   font-weight: 700;
   padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 h5 {
@@ -5634,8 +5636,8 @@ p {
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -5653,17 +5655,33 @@ p {
 }
 
 .media-block {
-  width: auto;
-  max-width: none;
-  border: 1px none #000;
-  text-align: center;
-  box-shadow: 0px 0px 40px  rgba(0, 0, 0, 0.16);
-
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px  rgba(0, 0, 0, 0.16);
+    text-align: left;
 }
 
 .image-38 {
-  width: 25vw;
-  height: 25vh;
+  
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -5673,8 +5691,9 @@ p {
 }
 
 .image-39 {
-  width: 25vw;
-  height: 25vh;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -5682,16 +5701,18 @@ p {
 }
 
 .image-40 {
-  width: 25vw;
-  height: 25vh;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .image-41 {
-  width: 25vw;
-  height: 25vh;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -6389,8 +6410,8 @@ p {
   }
 
   .div-block-40 {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -7654,8 +7675,8 @@ p {
   }
 
   .div-block-40 {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .image-38 {
